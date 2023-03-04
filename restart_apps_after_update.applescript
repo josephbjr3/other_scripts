@@ -7,6 +7,7 @@ end tell
 
 delay 5
 
+#restart Chrome
 tell application "Google Chrome"
     keystroke "r" using command down
     delay 2
@@ -14,3 +15,5 @@ tell application "Google Chrome"
     delay 2
     activate
 end tell
+
+#
