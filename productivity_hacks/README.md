@@ -1,0 +1,1 @@
+These scripts automate manual processes that increase my D2D productivity such as auto-restarting certain apps on a weekly basis so that updates can be implemented.

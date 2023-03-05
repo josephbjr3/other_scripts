@@ -1,0 +1,16 @@
+1. In terminal execute "crontab -e" to open the crontab file
+2. Input "0 5 * * 0 osascript /path/to/your/restart_apps.applescript" to run the restart_apps applescript weekly on Sunday at 5am (spaces matter)
+3. Save and exit the crontab (the method for this will vary depending on your text editor, I use vim so I press "Esc" and then ":wq" and then "enter")
+
+Note: you can execute "crontab -l" to view the crontab file
+Note: you can execute "crontab -r" to remove the crontab file
+Note: you should be able to view crontab logs in the system.log file usually located at /var/log/system.log on Mac
+
+
+Below is my actual crontab entry. I added brew commands b/c it's my packager manager and I want it to upgrade packages/apps before the restart.
+
+# do a brew upgrade every Sunday at 4am
+0 4 * * 0 brew upgrade && brew update && brew cleanup 
+
+#restart apps mentioned in the script every Sunday at 5am
+0 5 * * 0 osascript ~/Documents/other_scripts/productivity_hacks/restart_apps.applescript

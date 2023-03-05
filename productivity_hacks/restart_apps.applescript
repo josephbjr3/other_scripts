@@ -1,3 +1,7 @@
+(* 
+Here, I'm just restarting apps that commonly ask to restart to update.
+View the crontab_instructions.txt to learn how to run this script weekly.
+*)
 tell application "Visual Studio Code" to quit
 delay 2
 tell application "Visual Studio Code" to activate

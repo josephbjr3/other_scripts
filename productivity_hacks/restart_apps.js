@@ -1,3 +1,10 @@
+/* 
+This is the js version of my restart_apps script.
+I'm just restarting apps that commonly ask for a restart to update.
+I'm still working on this script.
+*/
+
+
 const { exec } = require('child_process');
 
 // Set the apps that need to be restarted
