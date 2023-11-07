@@ -1,0 +1,3 @@
+command line:
+
+python3 bookmarks_to_csv_first_run_not_applied.py /Users/Joseph/Documents/salesforce_stuff/personal_dev_org/bookmarks_11_4_23.html /Users/Joseph/Documents/salesforce_stuff/personal_dev_org/Jobs_to_look_at.csv
